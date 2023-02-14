@@ -2,35 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Parfum</title>
+    <title>Frontend Mentor | Social proof section</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <article class="container">
-        <div class="grid">
+    <main class="flex">
+      <div class="wrapper">
+        <div class="flex space-between">
           <div class="left">
-            <img src="images/image-product-desktop.jpg" alt="" />
+            <h1>
+              10,000+ of our 
+              users love our
+              products.
+            </h1>
+            <p>
+              We only provide great products combined with excellent customer
+              service. See what our satisfied customers are saying about our
+              services.
+            </p>
           </div>
           <div class="right">
-            <h6>PARFUME</h6>
-            <h1>Gabrielle Essence Eau DE Parfum</h1>
-            <p class="description">
-              A floral, solar and voluptuos interpretation composed by Olivier
-              Polge, Perfumer-Creator for the House of CHANEL
-            </p>
-            <div class="price">
-              <p class="new">$149.99</p>
-              <p class="old">$169.99</p>
+            <div class="flex review">
+              <div class="stars">
+                <img src="images/icon-star.svg" alt="star" /><img
+                  src="images/icon-star.svg"
+                  alt="star"
+                /><img src="images/icon-star.svg" alt="star" /><img
+                  src="images/icon-star.svg"
+                  alt="star"
+                /><img src="images/icon-star.svg" alt="star" />
+              </div>
+              <p>Rated 5 Stars in Reviews</p>
             </div>
-            <button class="button">
-              <img src="images/icon-cart.svg" alt="" /> Add to Cart
-            </button>
+            <div class="flex review">
+              <div class="stars">
+                <img src="images/icon-star.svg" alt="star" /><img
+                  src="images/icon-star.svg"
+                  alt="star"
+                /><img src="images/icon-star.svg" alt="star" /><img
+                  src="images/icon-star.svg"
+                  alt="star"
+                /><img src="images/icon-star.svg" alt="star" />
+              </div>
+              <p>Rated 5 Stars in Report Guru</p>
+            </div>
+
+            <div class="flex review">
+              <div class="stars">
+                <img src="images/icon-star.svg" alt="star" /><img
+                  src="images/icon-star.svg"
+                  alt="star"
+                /><img src="images/icon-star.svg" alt="star" /><img
+                  src="images/icon-star.svg"
+                  alt="star"
+                /><img src="images/icon-star.svg" alt="star" />
+              </div>
+              <p>Rated 5 Stars in BestTech</p>
+            </div>
           </div>
         </div>
-      </article>
+        <div class="flex reviews">
+          <div class="card">
+            <div class="name-position flex">
+              <img src="images/image-colton.jpg" alt="" />
+              <div class="position">
+                <p>Colton Smith</p>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+            <p class="text">
+              "We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent!"
+            </p>
+          </div>
+          <div class="card">
+            <div class="name-position flex">
+              <img src="images/image-irene.jpg" alt="" />
+              <div class="position">
+                <p>Irene Roberts</p>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+            <p class="text">
+              "Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
+            </p>
+          </div>
+          <div class="card">
+            <div class="name-position flex">
+              <img src="images/image-anne.jpg" alt="" />
+              <div class="position">
+                <p>Anne Wallace</p>
+                <p>Verified Buyer</p>
+              </div>
+            </div>
+            <p class="text">
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone!"
+            </p>
+          </div>
+        </div>
+        <!-- Irene Roberts
+        Verified Buyer "Customer service is always excellent and very quick turn
+        around. Completely delighted with the simplicity of the purchase and the
+        speed of delivery." Anne Wallace Verified Buyer "Put an order with this
+        company and can only praise them for the very high standard. Will
+        definitely use them again and recommend them to everyone!" -->
+      </div>
     </main>
   </body>
 </html>
