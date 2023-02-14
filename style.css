@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: hsl(300, 43%, 22%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+
+main {
+  background: url(images/bg-pattern-bottom-desktop.svg),
+    url(images/bg-pattern-top-desktop.svg);
+  background-position: bottom right, top left;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 60%, 45%;
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.left {
+  width: 38%;
+}
+
+.left p {
+  opacity: 80%;
+  font-weight: 500;
+}
+
+.rigt {
+  width: 50%;
+}
+
+.review {
+  justify-content: start;
+  margin: 20px 0;
+  padding: 15px 35px;
+  border-radius: 10px;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.review p {
+  font-weight: 700;
+}
+
+.review:nth-child(1) {
+  position: relative;
+  left: -120px;
+}
+
+.review:nth-child(2) {
+  position: relative;
+  left: -60px;
+}
+
+.stars {
+  padding-right: 35px;
+}
+
+.stars img {
+  padding: 5px;
+}
+
+.reviews {
+  gap: 40px;
+  margin-top: 100px;
+  align-items: stretch;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px 30px;
+  border-radius: 15px;
+}
+
+.card:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+
+.card:nth-child(3) {
+  position: relative;
+  top: 40px;
+}
+
+.name-position {
+  justify-content: start;
+  line-height: 28px;
+}
+
+.position p:nth-child(1) {
+  font-weight: 700;
+}
+
+.position p:nth-child(2) {
+  color: hsl(333, 80%, 67%);
+}
+
+.name-position img {
+  margin-right: 20px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.text {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .review:nth-child(1) {
+    position: relative;
+    left: 0px;
+  }
+
+  .review:nth-child(2) {
+    position: relative;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .reviews {
+    display: block;
+    margin-top: 50px;
+  }
+  .left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .right {
+    text-align: center;
+  }
+  .review {
+    display: flex;
+    justify-content: center;
+  }
+  .space-between {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .review {
+    display: block;
+    text-align: center;
+  }
+  .stars{
+    padding-right: 0;
+  }
+}
